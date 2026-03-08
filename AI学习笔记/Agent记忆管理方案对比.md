@@ -32,3 +32,5 @@
          → 工作记忆（任务状态）
          → 长期记忆（用户画像+历史）
 ```
+
+### Redis 实现要点\n- TTL 自动过期，默认 30 分钟\n- 按 session_id 分 key\n- 序列化方案：JSON 或 Protobuf
