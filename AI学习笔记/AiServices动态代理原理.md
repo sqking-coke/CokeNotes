@@ -36,3 +36,5 @@ CodeReviewer reviewer = AiServices.builder(CodeReviewer.class)
 | 工具注册 | 手动注入 | @Tool 自动发现 |
 
 **AiServices 适合标准化 Agent，手写适合复杂自定义逻辑。**
+
+### @Tool 参数校验\n@P 注解只是描述，不做校验。实际校验需要在工具方法内部完成：\n- 必填参数非空检查\n- 字符串长度限制\n- 数值范围校验
