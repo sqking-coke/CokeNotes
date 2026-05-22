@@ -34,3 +34,5 @@ location /api/ {
 - .env 文件存敏感信息（不入 git）
 - .env.example 提交模板
 - Docker Compose --env-file 指定环境
+
+### 健康检查\n```yaml\nhealthcheck:\n  test: ["CMD", "pg_isready", "-U", "postgres"]\n  interval: 10s\n  timeout: 5s\n  retries: 5\n```\n确保 postgres 启动完成后再启动 backend，避免连接失败。
