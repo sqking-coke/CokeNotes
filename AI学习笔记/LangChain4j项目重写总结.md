@@ -25,3 +25,5 @@
 > 会写手写版 → 理解原理
 > 会用框架版 → 工程效率
 > 两版对比 → 知道边界
+
+### 框架升级注意\n- 1.0.0-beta1 → beta2：ChatMemory API 有 breaking change\n- 升级前读 changelog，锁定版本号\n- 建议写集成测试覆盖核心 LLM 调用路径
